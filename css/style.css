@@ -213,6 +213,11 @@ a {
     transition: all 0.15s;
 }
 
+.btn--stretched {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
 .btn--light:hover {
     background-color: var(--color-heading);
     color: #fff;
@@ -476,5 +481,48 @@ a {
     }
     .testimonial .quote__author {
         font-size: 2.4rem;
+    }
+}
+
+/* call out */
+
+.call-out {
+    text-align: center;
+    padding: 4.8rem;
+    border-radius: 5px;
+}
+
+.call-out--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.call-out__heading {
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 0;
+}
+
+.call-out .btn {
+    align-self: center;
+    justify-self: center;
+}
+
+.call-out__content {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .call-out__content {
+        text-align: left;
+    }
+
+    .call-out .btn {
+        justify-self: start;
+        margin: 0 3rem;
+    }
+
+    .call-out .grid {
+        grid-template-columns: 1fr auto;
     }
 }
