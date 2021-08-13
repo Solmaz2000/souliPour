@@ -4,6 +4,7 @@
     --color-accent: #ff3400;
     --color-heading: #1b0760;
     --color-body: #918ca4;
+    --color-body-darker: #5c5577;
     --color-border: #ccc;
 }
 
@@ -364,4 +365,14 @@ a {
 }
 
 /* media */
-/* media */
+
+.media {
+    display: flex;
+}
+
+.media__image {
+    margin: 1rem 2rem;
+}
+.media__title {
+    margin-top: 0;
+}
