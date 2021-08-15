@@ -142,20 +142,21 @@ a {
 }
 
 .list--tick {
-    list-style-image: url(../images/check.svg);
-    padding-left: 3rem;
+    list-style-image: url(../images/tick.svg);
+    padding-left: 5rem;
 }
 
 .list--tick .list__item {
+    text-align: left;
     padding-left: 0.5rem;
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
     .list--tick .list__item {
         padding-left: 0;
     }
-}
+} */
 
 /* Icons */
 
@@ -330,7 +331,14 @@ a {
 
 /* plan */
 
+.plan {
+    transition: transform 0.2s ease-out;
+}
+.plan:hover {
+    transform: scale(1.05);
+}
 .plan__name {
+    text-align: left;
     color: #fff;
     margin: 0;
     font-weight: 500;
@@ -363,8 +371,16 @@ a {
     position: relative;
 }
 
+.plan--popular {
+    transform: scale(1.1);
+}
+
+.plan--popular:hover {
+    transform: scale(1.15);
+}
+
 .plan--popular .card__header::before {
-    content: url(../images/popular.svg);
+    content: url(../icons/popular.svg);
     width: 40px;
     display: block;
     position: absolute;
@@ -731,4 +747,25 @@ a {
     .block-domain__pricing {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Plans Block */
+
+.block-plans .grid {
+    gap: 8rem 4rem;
+}
+
+.block-plans .btn {
+    margin: 4rem 3rem;
+}
+
+.block-plans .plan {
+    margin: 0 auto;
+    max-width: 500px;
 }
