@@ -602,11 +602,17 @@ a {
     color: #b9c3cf;
 }
 
+.block--dark-grey {
+    color: #919191;
+    background-color: #232323;
+}
+
 .block__header {
     margin-bottom: 5rem;
 }
 
-.block--dark .block__heading {
+.block--dark,
+.block--dark-grey .block__heading {
     color: #fff;
 }
 
@@ -828,4 +834,96 @@ a {
 
 .block-testimonial .block__heading {
     font-size: 4rem;
+}
+
+/* Block Footer */
+
+.footer {
+    font-size: 1.5rem;
+}
+
+.footer__section {
+    padding: 2rem;
+    border-bottom: 2px solid #393939;
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer .list__item {
+    text-align: left;
+    margin: 4rem 0;
+}
+
+.footer a {
+    font-size: 2.4rem;
+    text-align: left;
+    color: #919191;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer__brand p {
+    font-size: 2.1rem;
+    margin-top: 2rem;
+}
+
+.footer__brand {
+    justify-self: center;
+    margin-top: 8rem;
+}
+
+.footer__brand img {
+    width: 100%;
+    max-width: 240px;
+}
+
+.copy-right {
+    color: #fff;
+    opacity: 0.2;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--1x4 {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 4rem;
+    }
+
+    .footer .collapsible__chevron {
+        display: none;
+    }
+
+    .footer .collapsible {
+        border: 0;
+    }
+
+    .collapsible__content {
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .footer__brand {
+        order: -1;
+        margin-top: 2rem;
+    }
+
+    .footer__brand p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .footer__heading {
+        font-size: 1.6rem;
+    }
+
+    .footer a {
+        font-size: 1.5rem;
+    }
 }
