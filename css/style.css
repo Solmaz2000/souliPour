@@ -602,6 +602,10 @@ a {
     color: #b9c3cf;
 }
 
+.block__header {
+    margin-bottom: 5rem;
+}
+
 .block--dark .block__heading {
     color: #fff;
 }
@@ -818,4 +822,10 @@ a {
 
 .show-case__image {
     width: 100%;
+}
+
+/* Block Testimonial */
+
+.block-testimonial .block__heading {
+    font-size: 4rem;
 }
