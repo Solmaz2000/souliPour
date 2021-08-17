@@ -2,10 +2,10 @@
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
-    --color-heading: #1b0760;
+    --color-heading: #281d4e;
     --color-body: #918ca4;
     --color-body-darker: #5c5577;
-    --color-border: #ccc;
+    --color-border: #807363;
 }
 
 *,
@@ -500,10 +500,11 @@ a {
 /* testimonial */
 
 .testimonial {
-    padding: 3.5rem;
+    padding: 3rem;
 }
 
 .testimonial__image {
+    margin: 0;
     position: relative;
 }
 
@@ -514,7 +515,7 @@ a {
 .testimonial__image > span {
     transform: scale(0.5);
     position: absolute;
-    top: 2.4rem;
+    top: 6rem;
     right: -32px;
 }
 
@@ -647,6 +648,9 @@ a {
     color: #fff;
 }
 
+.block--special {
+    background-color: #281d4e;
+}
 .block--skewed--left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
     clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
@@ -666,7 +670,7 @@ a {
 /* navigation Bar */
 .nav {
     display: flex;
-    background-color: #000;
+    background-color: #281d4e;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 1rem;
@@ -705,6 +709,12 @@ a {
 }
 
 .nav__brand {
+    width: 15rem;
+    margin: 1rem 2rem;
+}
+
+.nav__brand img {
+    width: 100%;
     transform: translateY(5px);
 }
 
@@ -727,24 +737,14 @@ a {
 }
 
 /* hero */
-
-.hero {
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-}
-
-.hero__banner {
-    width: 100%;
-}
-
 .hero .block__heading {
-    color: #fff;
+    color: #281d4e;
 }
-
 .hero__tagline {
-    margin: 3rem 0 4rem;
+    margin: 3rem 0;
     font-size: 2rem;
     letter-spacing: 1px;
-    color: #b9c3cf;
+    color: #ccc;
 }
 
 .container {
@@ -753,13 +753,27 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .hero {
+        height: 80vh;
+        background-image: url(../image/banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .hero__content {
         text-align: left;
         align-self: center;
+        position: absolute;
+        top: 40%;
+        left: 40%;
     }
 
     .hero.block {
         padding-top: 0;
+    }
+
+    .hero__tagline {
+        margin-bottom: 4rem;
     }
 }
 
@@ -929,8 +943,8 @@ a {
 }
 
 .footer__brand img {
-    width: 100%;
     max-width: 240px;
+    width: 20rem;
 }
 
 .copy-right {
@@ -973,5 +987,9 @@ a {
 
     .footer a {
         font-size: 1.5rem;
+    }
+
+    .footer__brand img {
+        margin-left: 3rem;
     }
 }
